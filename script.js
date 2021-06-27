@@ -14,7 +14,7 @@ form.addEventListener("submit" , function cityname(event){
 })
 
 async function weather (city){
-    const url=`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=43fb8a0d12d87ebb0c0c5b061fd131ae&units=metric`;
+    const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=43fb8a0d12d87ebb0c0c5b061fd131ae&units=metric`;
     console.log(url);
     const response = await fetch(url);
     const data = await response.json();  
